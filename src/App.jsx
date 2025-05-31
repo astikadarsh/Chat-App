@@ -13,6 +13,7 @@ useEffect(()=>{
   onAuthStateChanged(auth,async (user) => {
     if (user) {
       navigate('/chat')
+      console.log(user);
     }
     else{
       navigate('/')
